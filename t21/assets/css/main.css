@@ -1,0 +1,177 @@
+body {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+    background-image: url('https://rare-gallery.com/uploads/posts/568759-appetizer-breakfast.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+    scroll-behavior: smooth;
+}
+
+
+
+main {
+
+    flex: 1 0 auto;
+    margin-top: 5em;
+}
+
+
+.input-field label {
+    color: black;
+}
+
+.profile-picture {
+    width: 100px;
+    height: 100px;
+    background-size: cover;
+    background-color: white;
+}
+
+.p1 {
+    padding: 1em;
+}
+
+.m1 {
+    margin: 1em;
+}
+
+.inline {
+    display: inline;
+}
+
+.fixed-top {
+    position: fixed;
+    z-index: 9999;
+    top: 0;
+}
+
+blockquote.blockquote-green {
+    border-left-color: #26a69a;
+}
+
+.sticky {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    z-index: 9999;
+}
+
+.top-margin {
+    margin: 1em auto;
+}
+
+#info {
+    display: none;
+}
+
+
+.low-res {
+    image-resolution: 50dpi;
+}
+
+#info:target {
+    display: block;
+}
+
+.user-photo {
+    background-size: cover;
+    background-color: red;
+    background-position: center;
+    width: 10em;
+    height: 10em;
+}
+
+.slider {
+    width: 50%;
+}
+
+i.material-icons {
+
+    display: inline !important;
+    margin: 3px;
+    vertical-align: middle !important;
+}
+
+.container.hidden {
+    display: none;
+}
+
+.container.hidden:target {
+    display: block;
+}
+
+.container.login {
+    width: 35em;
+    max-width: 92%;
+    border-radius: 3px;
+}
+
+span.field-icon {
+    float: right;
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    cursor: pointer;
+    z-index: 2;
+}
+
+.participant {
+    padding: 1em;
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.068);
+}
+
+.participant-images {
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.349);
+    padding: 1em;
+    margin-bottom: 1em;
+    overflow: hidden;
+    display: flex;
+    justify-content: space-between;
+}
+
+.participant-images img {
+    width: 300px;
+}
+
+@media only screen and (max-width:800px) {
+
+    .participant-images {
+
+
+
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: center;
+        align-items: stretch;
+    }
+
+    .participant-images img {
+        flex: 1;
+        width: 130px;
+        margin: 3px;
+    }
+
+}
+
+@media only screen and (max-width:600px) {
+
+    .slider {
+        width: 90%;
+    }
+
+}
+
+@media only screen and (max-width:400px) {
+    .participant-images img {
+        flex: 1;
+        width: 100px;
+        margin: 3px;
+    }
+
+    .slider {
+        width: 90%;
+    }
+
+}
